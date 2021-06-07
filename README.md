@@ -1,3 +1,3 @@
-# Testowa
-testowe repozytorium aplikacji pierwszej pomocy 
-nasze pierwsze udane repozutorium :)
+# Aplikacja Pierwszej Pomocy 
+ repozytorium aplikacji pierwszej pomocy 
+
