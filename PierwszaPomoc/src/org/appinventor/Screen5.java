@@ -1,0 +1,73 @@
+package org.appinventor;
+import com.google.appinventor.components.runtime.HandlesEventDispatching;
+import com.google.appinventor.components.runtime.EventDispatcher;
+import com.google.appinventor.components.runtime.Form;
+import com.google.appinventor.components.runtime.Component;
+import com.google.appinventor.components.runtime.HorizontalArrangement;
+import com.google.appinventor.components.runtime.Image;
+import com.google.appinventor.components.runtime.Label;
+import com.google.appinventor.components.runtime.TableArrangement;
+import com.google.appinventor.components.runtime.VerticalScrollArrangement;
+class Screen5 extends Form implements HandlesEventDispatching {
+  private HorizontalArrangement HorizontalArrangement1;
+  private Image Image2;
+  private Label Label1;
+  private Image Image1;
+  private TableArrangement TableArrangement1;
+  private Label Label2;
+  private VerticalScrollArrangement VerticalScrollArrangement1;
+  private Label Label3;
+  private Image Image3;
+  private Label Label4;
+  protected void $define() {
+    this.AppName("PierwszaPomoc");
+    this.Scrollable(true);
+    this.Title("Screen5");
+    HorizontalArrangement1 = new HorizontalArrangement(this);
+    HorizontalArrangement1.Height(-1015);
+    HorizontalArrangement1.Width(LENGTH_FILL_PARENT);
+    Image2 = new Image(HorizontalArrangement1);
+    Image2.Height(-1014);
+    Image2.Width(-1020);
+    Image2.Picture("unnamed.png");
+    Label1 = new Label(HorizontalArrangement1);
+    Label1.FontBold(true);
+    Label1.FontSize(27);
+    Label1.Height(-1014);
+    Label1.Width(LENGTH_FILL_PARENT);
+    Label1.Text("PIERWSZA\n POMOC");
+    Image1 = new Image(HorizontalArrangement1);
+    Image1.Height(-1014);
+    Image1.Width(-1020);
+    Image1.Picture("logo2.png");
+    TableArrangement1 = new TableArrangement(this);
+    TableArrangement1.Height(-1015);
+    TableArrangement1.Width(-1098);
+    Label2 = new Label(TableArrangement1);
+    Label2.Column(0);
+    Label2.FontBold(true);
+    Label2.FontSize(22);
+    Label2.Height(-1010);
+    Label2.Width(-1098);
+    Label2.Row(0);
+    Label2.Text("WSTĘPNA OCENA POSZKODOWANEGO");
+    VerticalScrollArrangement1 = new VerticalScrollArrangement(this);
+    VerticalScrollArrangement1.Height(LENGTH_FILL_PARENT);
+    VerticalScrollArrangement1.Width(LENGTH_FILL_PARENT);
+    Label3 = new Label(VerticalScrollArrangement1);
+    Label3.Height(330);
+    Label3.Width(310);
+    Label3.Text("Wstępna ocena poszkodowanego polega na sprawdzeniu w jakim stanie obecnie znajduje się osoba poszkodowana. \n Najpierw należy ocenić stan świadomości poszkodowanego poprzez poddanie ocenie reakcji bólowych i słuchowych. \nPodchodzimy do osoby poszkodowanej od strony nóg należy klęknąć i poklepać poszkodowanego po ramieniu, następnie głośno mówimy: Otwórz oczy! i pytamy się: Jak się nazywa i czy nas słyszy?, gdy nie reaguje należy przejechać piąstką po mostku i obserwować mimikę twarzy. Jeśli jest brak jakiejkolwiek reakcji należy udrożnić drogi oddechowe rękoczynem czoło-żuchwa. Jedną rękę kładziemy na czole poszkodowanego a dwa palce (wskazujący i środkowy) drugiej ręki umieszczamy na twardej części żuchwy i delikatnie odchylamy głowę do tyłu. Poniżej na rysunku jest ukazany pożądany efekt udrożnienia górnych dróg oddechowych.");
+    Image3 = new Image(VerticalScrollArrangement1);
+    Image3.Height(140);
+    Image3.Width(310);
+    Image3.Picture("czolorzuchwa.png");
+    Label4 = new Label(VerticalScrollArrangement1);
+    Label4.Height(400);
+    Label4.Width(310);
+    Label4.Text("Manewrem czoło-żuchwa osiąga się drożność dróg oddechowych co zapewnia osobie poszkodowanej swobodny przepływ powietrza. W momencie, gdy nie wykonamy tego manewru u osoby nieprzytomnej dochodzi do zapadnięcia się języka na tylną ścianę gardła co powoduje niedrożność dróg oddechowych w efekcie przepływ powietrza jest niemożliwy. \n" +"Następnie należy ocenić oddech poszkodowanego poprzez zmysł czucia słuchu i wzroku. Czyli cięgle udrażniając drogi oddechowe, nachylamy się nad poszkodowanym, zbliżając swój policzek do ust poszkodowanego i kierując swój wzrok na klatkę piersiową. Oddech oceniamy przez 10 sekund i w tym czasie powinny być 2 pełne oddechy. Sprawdzimy to poprzez zmysł czucia oddechu na swoim policzku, poprzez zmysł słuchu, czyli słyszanego szmeru oddechu oraz poprzez zmysł wzroku, czyli obserwacji unoszenia się klatki piersiowej. Jeśli poszkodowany nie oddycha natychmiast dzwonimy po pomoc pod numer alarmowy 112 albo 999 i przystępujemy do RKO. ");
+  }
+  public boolean dispatchEvent(Component component, String componentName, String eventName, Object[] params){
+    return false;
+  }
+}
